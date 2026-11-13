@@ -1,0 +1,40 @@
+<!--Student html document , where students will log in using their student id-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+    <!--Assing css for styling-->
+    <!--Setting the buttons sizes, input padding and sizes, and also the lab font size.-->
+    <style type="text/css">
+		table, th, td {border: 1px solid black}
+  
+        label { 
+            font: 40px; 
+        } 
+
+        input { 
+            margin: 15px; 
+            padding: 2px 
+        } 
+        button{
+            height: 40px;
+            width: 200px;
+        }
+    </style> 
+</head>
+<!--Setting the background color of the site the same as the main page.-->
+<body bgColor="#D3D3D3">
+        <!--Creating the header for the student ID log in, and centering it.-->
+	    <center><h1>Student Log In:</h2></center>
+            <!--Creating a form, method post and sending their input to the students.php page.-->
+            <form method="post" action="./students.php">
+                    <!--Asking for user's studentID as a text input-->
+                    <!--Changing the sizing and styling of the input text boxes and buttons.-->
+                    <center><label for="sid">STUDENT ID :</label></center>
+                    <center><input type ="text" name = "studentID" size=60 style = "height:40px" placeholder="Enter Student ID"></center>
+                    <center><input type = "submit" value = "SUBMIT" "accept" value="FACULTY" style="height:40px; width:200px; background-color:rgb(113, 203, 140); border-color:black"></center>
+            </form>
+            <!--Creating a back button which references to the main page.-->
+            <center><a href="main.html"><button>BACK</button></a></center>
+</body>
+</html>

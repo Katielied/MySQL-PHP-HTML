@@ -1,0 +1,41 @@
+<!--Faculty HTml, used for the faculty members to input their values they want to submit as the grade.-->
+<!DOCTYPE html>
+<html>
+   <head>
+        <!--Creating the title of submit grades and adding the styling-->
+        <!--Styling the buttons and inputs sizing and styling.-->
+       <title>Submit Grades</title>
+       <style type="text/css">
+		table, th, td {border: 1px solid black}
+
+        button{
+            height: 40px;
+            width: 200px;
+        }
+
+        input { 
+            margin: 15px; 
+            padding: 2px 
+        } 
+
+        </style> 
+   </head>
+   <!--Changing the background color of the site to the same color as the other pages.-->
+   <body bgColor="#D3D3D3">
+        <!--Creating a header prompting the user to enter a grade into the system, also centering it.-->
+       <center><h1>ENTER GRADE :</h1><br><br></center>
+       <!--Creating a form method with post, sending the inputs to the dbConnect.php page.-->
+       <form method="post" action="dbConnect.php">
+            <!--Asking user for their inputs, all of type text-->
+            <!--Changing the sizing and style of each input.-->
+            <!--Adding a placeholder, to style the input boxes.-->
+           <center>COURSE ID : <input type="text" name="courseID" size=60 style = "height:40px" placeholder="Enter Course ID"><br><br></center>
+           <center>STUDENT ID : <input type="text" name="studentID" size=60 style = "height:40px" placeholder="Enter Student ID"><br><br></center>
+           <center>TERM : <input type="text" name="term" size=60 style = "height:40px" placeholder="Enter Term"><br><br></center>
+           <center>GRADE : <input type="text" name="grade" size=60 style = "height:40px" placeholder="Enter Grade"><br><br></center>
+
+            <!--Creating submit button to submit uswer input values, adding styling and font sizing to it.-->
+           <center><input type="submit" value="Submit" style="height:40px; width:200px; background-color:rgb(113, 203, 140); border-color:black"></center>
+       </form>
+       </body>
+       </html>

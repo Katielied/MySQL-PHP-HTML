@@ -1,0 +1,25 @@
+<!--Main html page, prompts the user two buttons, one for students and one for faculty.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title> 
+	<!--Adding css in the style.-->
+	<style type="text/css">
+		table, th, td {border: 1px solid black}
+	</style>
+	<link href="style.css">
+</head>
+<!--Creating the body of the html page, changing the background color-->
+<body bgColor="#D3D3D3">
+	<!--Adding a header size h1, with the style css at the top, also centering the header and the button inputs.-->
+	<center><h1>School System</h2><center>
+    <center><h1>Are You a Student or Faculty Member?</h1> <br><center>
+
+	<!--Creating two input types of button, one for Students and one for faculty-->
+	<!--Both buttons have been styled, to make them larger and change their colors and border colors.-->
+	<!--They have also been centered, and on click the buttons will send them to their respective pages-->
+    <center><input type = "button" name = "option" value="STUDENT" style="height:50px; width:200px; background-color:rgb(133, 133, 199); border-color:black" onclick="document.location.href='student.html'"/> <br><br></center>
+    <center><input type = "button" name = "accept" value="FACULTY" style="height:50px; width:200px; background-color:rgb(133, 133, 199); border-color:black" onclick="document.location.href='submitGrades.html'"/>  <br></center>
+</body>
+</html>
+
