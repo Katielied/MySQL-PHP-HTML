@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Creting an account page.-->
+  <title>Sign Up</title>
+  <meta charset="UTF-8">
+  <!--Adding css style.-->
+  <style>
+       h1
+       {
+           text-align: center;
+       }
+       body
+       {
+           text-align: center;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(208, 220, 223);
+       }
+       input
+       {
+           font-size: 15px;
+          
+           border-radius: 5px;
+           padding-top: 5px;
+           padding-right: 5px;
+           padding-bottom: 5px;
+           padding-left: 5px;
+       }
+       button
+       {
+          
+           border-radius: 5px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+       }
+       label
+       {
+           font-size: 17px;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+
+
+  </style>
+</head>
+<body>
+  <h1>Pet Sitter - SIGN UP</h2>
+      <!--Sneding all inputs to createAccount.php using the post method.-->
+      <form method="post" action="createAccount.php" novalidate>
+
+          <!--getting all of the required user inputs.-->
+          <div>
+              <label for="firstName">First Name:</label>
+              <input type="text" name="firstName"><br><br>
+          </div>
+
+          <div>
+              <label for="lastName">Last Name:</label>
+              <input type="text" name="lastName"><br><br>
+          </div>
+
+          <div>
+              <label for="username">Username:</label>
+              <input type="text" name="username"><br><br>
+          </div>
+
+          <div>
+              <label for="password">Password:</label>
+              <input type="text" name="password"><br><br>
+          </div>
+
+          <div>
+              <label for="role">Role:</label>
+              <input type="text" name="role"><br><br>
+          </div>
+
+          <div>
+              <label for="phoneNumber">Phone Number:</label>
+              <input type="tel" name="phoneNumber"><br><br>
+          </div>
+
+          <div>
+              <label for="emailAddress">Email Address:</label>
+              <input type="email" name="emailAddress"><br><br><br>
+          </div>
+
+          <button>Sign Up</button>
+      </form>
+     </body>
+     </html>

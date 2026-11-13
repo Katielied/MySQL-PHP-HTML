@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--HTML file to make an order.-->
+  <title>Make Order</title>
+  <meta charset="UTF-8">
+  <!--Adding css style-->
+  <style>
+       h1
+       {
+           text-align: center;
+       }
+       body
+       {
+           text-align: center;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(208, 220, 223);
+       }
+       input
+       {
+           font-size: 15px;
+          
+           border-radius: 5px;
+           padding-top: 5px;
+           padding-right: 5px;
+           padding-bottom: 5px;
+           padding-left: 5px;
+       }
+       button
+       {
+          
+           border-radius: 5px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+       }
+       label
+       {
+           font-size: 17px;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+  </style>
+
+
+</head>
+<body>
+  <h1>Client - Make An Order</h2>
+      <!--sending all user inputs to the php below, using the method post.-->
+      <form method="post" action="createOrder.php" novalidate>
+    
+          <!--Asking for all the required attributes of the orders table.-->
+
+          <div>
+              <label for="userName">Username</label>
+              <input type="text" name="clientID">
+          </div>
+
+
+          <div>
+              <label for="OrderType">Type of Order (G - Grooming, W - Walking, P - Playing)</label>
+              <input type="text" name="orderType">
+          </div>
+
+          <div>
+              <label for="PetType">Type of Pet (C - Cat, D - Dog, CD - Both)</label>
+              <input type="text" name="petType">
+          </div>
+
+          <div>
+              <label for="comments">Comments (optional)</label>
+              <input type="text" name="comments">
+          </div>
+
+          <div>
+              <label for="date">Date</label>
+              <input type="date" name="date">
+          </div>
+
+          <button>Make Order!</button>
+      </form>
+     </body>
+     </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clients</title>
+  <!--Adding css style-->
+  <style>
+   h1
+       {
+           text-align: center;
+       }
+       body
+       {
+           text-align: center;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(208, 220, 223);
+       }
+       input
+       {
+           font-size: 15px;
+          
+           border-radius: 5px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+       }
+       button
+       {
+          
+           border-radius: 5px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+       }
+       label
+       {
+           font-size: 20px;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+  </style>
+</head>
+<body><br><br><br>
+  <!-- Client log In page -->
+  <h1>Pet Sitter - Client Log In Page</h2><br><br><br>
+      <!-- Asking for their username and password, and sending it to a php page. -->
+      <form method="post" action="./client.php">
+              <label for="cid">CLIENT LOGIN :</label><br><br>
+              <input type ="text" name = "userID" placeholder="Enter Client Username:"><br><br>
+              <input type ="text" name = "clientPass" placeholder="Enter Client Password:"><br><br>
+              <input type = "submit" value = "SUBMIT" "accept"><br><br><br>
+      </form>
+      <center><a href="main.html"><button>BACK</button></a></center>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Creating a log in site for the handlers.-->
+  <title>Handlers</title>
+  <!--Adding css styling to the page.-->
+  <style>
+       h1
+       {
+           text-align: center;
+       }
+       body
+       {
+           text-align: center;
+           font-family: Arial, Helvetica, sans-serif;
+           background-color: rgb(208, 220, 223);
+       }
+       input
+       {
+           font-size: 15px;
+          
+           border-radius: 5px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+       }
+       button
+       {
+          
+           border-radius: 5px;
+           padding-top: 10px;
+           padding-right: 10px;
+           padding-bottom: 10px;
+           padding-left: 10px;
+       }
+       label
+       {
+           font-size: 20px;
+           font-family: Arial, Helvetica, sans-serif;
+       }
+  </style>
+</head>
+<body><br><br><br>
+  <h1>Pet Sitter - Handler Log In Page</h2><br><br>
+      <!--Sending all user inputs to a php.-->
+      <form method="post" action="./handler.php">
+              <label for="hid">HANDLER LOGIN :</label><br><br>
+              <input type ="text" name = "handlerID" placeholder="Enter Handler Username:"><br><br>
+              <input type ="text" name = "handlerPass" placeholder="Enter Handler Password:"><br><br>
+              <input type = "submit" value = "SUBMIT" "accept">
+      </form><br><br><br><br>
+      <center><a href="main.html"><button>BACK</button></a></center>
+</body>
+</html>
+
+
