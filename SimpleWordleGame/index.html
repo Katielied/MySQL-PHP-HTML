@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0" />
+        <title>Number Guessing Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Guess the 5 Letter Word Game</h1>
+        <p>
+            We picked a random 5 letter word.
+            Try to guess the word in 10 attempts or less!
+            We'll tell you if letters are in the correct place - 🟢,
+            in the word - 🟡 or not in the word at all - 🔴.
+        </p>
+
+        <form id="guessForm">
+            <label for="guessField">Enter a guess: </label>
+            <input type="text" id="guessField">
+            <input type="submit" value="Submit guess" id="guessSubmit"> 
+        </form>
+
+        <div class="results">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="isInvalidFeedback"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
