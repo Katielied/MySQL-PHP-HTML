@@ -1,0 +1,141 @@
+:root{
+    --border: rgb(114, 111, 111);
+    --badge: rgb(255,255,255, 0.2);
+    --hover: rgba(244, 154, 154, 0.92);
+    --click: #c3daf7;
+}
+
+html,body{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+body{
+    background: rgb(250, 241, 241)
+}
+
+header{
+    background: rgb(240, 181, 181);
+    color: black;
+    padding: 1rem 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h2{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+header .badge{
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    margin-top: auto;
+    background-color: var(--badge);
+    border-radius: 14px;
+    border: 1px solid var(--border);
+
+}
+
+a.badge{
+    text-decoration: none;
+    color: black;
+}
+
+a.badge:hover{
+    background-color: var(--hover);
+}
+
+a.badge:active{
+    background-color: var(--click);
+}
+ 
+.card-section ul li{
+    margin-bottom: 1rem;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e6e5e5;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin: 10px auto;
+    width: 80%;
+}
+
+.title-card1{
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e6e5e5;
+    border-radius: 14px;
+    margin: 10px auto;
+    width: 20%;
+}
+
+.title-card2{
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e6e5e5;
+    border-radius: 14px;
+    margin: 10px auto;
+    width: 25%;
+}
+
+.title-card3{
+    text-align: center;
+    background-color: white;
+    border: 1px solid #e6e5e5;
+    border-radius: 14px;
+    margin: 10px auto;
+    width: 40%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.imageHorizontal{
+    width: 50%;
+    height: 50%;
+}
+
+.clickImg{
+    width: 10%;
+    height: 10%;
+}
+
+.clickImg:hover{
+    transform:translateY(-6px);
+    transition: transform .6s ease;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.card-section ul{
+    text-align: left;
+    margin-left: 1.5rem;
+}
